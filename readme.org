@@ -4,6 +4,8 @@ An almost exact copy of [[https://github.com/technomancy/serializable-fn][serial
 redefine the clojure.core functions in order to be effective
 EVERYWHERE!
 
+Works with =fn=, =defn= and even anonymous functions!
+
 [[./serialize.jpg]]
 
 :  ;; raw Clojure behaviour
@@ -22,8 +24,14 @@ EVERYWHERE!
 
 * Usage
 
+Add =[org.clojars.frozenlock/force-serialize "0.1.0"]= in your project
+dependencies.
+
 Simply require =force-serialize.core=. The namespace /will/
 automagically replace the core functions.
+
+should be the first thing required in your project if you want every
+functions to be serializable.
 
 * License
 

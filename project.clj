@@ -1,4 +1,4 @@
-(defproject force-serialize "0.1.0"
+(defproject org.clojars.frozenlock/force-serialize "0.1.0"
   :description "Return beautiful serialized functions instead of ugly java objects."
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"

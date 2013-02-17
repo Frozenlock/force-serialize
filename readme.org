@@ -12,10 +12,9 @@ Works with =fn=, =defn= and even anonymous functions!
 :  user> (fn [x] (inc (inc x)))
 :  #<user$eval__1750$fn__1751 user$eval__1750$fn__1751@927e4be>
      ^^ ugly java stuff
-:  ;; with serializable-fn
-:  user> (require '[serializable.fn :as s])
+:  ;; with force-serializable
 :   
-:  user> (def dinc (s/fn [x] (inc (inc x))))
+:  user> (def dinc (fn [x] (inc (inc x))))
 :  (fn [x] (inc (inc x)))
      ^^ More lispy result indeed!
 :  user> ((eval (read-string (pr-str dinc))) 0)

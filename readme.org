@@ -23,7 +23,7 @@ Works with =fn=, =defn= and even anonymous functions!
 
 * Usage
 
-Add =[org.clojars.frozenlock/force-serialize "0.1.1"]= in your project
+Add =[force-serialize "0.1.1"]= in your project
 dependencies.
 
 Simply require =force-serialize.core=. The namespace /will/

@@ -12,7 +12,7 @@ Works with =fn=, =defn= and even anonymous functions!
 :  user> (fn [x] (inc (inc x)))
 :  #<user$eval__1750$fn__1751 user$eval__1750$fn__1751@927e4be>
      ^^ ugly java stuff
-:  ;; with force-serializable
+:  ;; with force-serialize
 :   
 :  user> (def dinc (fn [x] (inc (inc x))))
 :  (fn [x] (inc (inc x)))
@@ -23,7 +23,7 @@ Works with =fn=, =defn= and even anonymous functions!
 
 * Usage
 
-Add =[org.clojars.frozenlock/force-serialize "0.1.0"]= in your project
+Add =[org.clojars.frozenlock/force-serialize "0.1.1"]= in your project
 dependencies.
 
 Simply require =force-serialize.core=. The namespace /will/

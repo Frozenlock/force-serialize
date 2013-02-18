@@ -65,6 +65,10 @@
   (with-namespace clojure.core
     (defalias fn force-serialize.core/fn)))
 
-
+(defn restore-fn
+  "Restore the original clojure.core/fn function."[]
+  (with-namespace clojure.core
+    (defalias fn force-serialize.core/old-clojure-core-fn)))
+  
 ;; and now, replace the core 'fn' macro. Go!
 (replace-fn)
